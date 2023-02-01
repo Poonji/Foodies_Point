@@ -10,28 +10,65 @@
     display: flex;
     align-items: center;
 }
-#logo{
-    margin: 0px 0px;
-
-}
 
 #logo img{
     height: 56;
     margin: 0px 0px;
 
 }
+
+#navbar{
+    position: relative;
+}
 #navbar ul {
     display:flex;
 }
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
 #navbar ul li{
     list-style-type: none;
     font-size: 1.2rem;
 }
 
+
 #navbar ul li a{
-    display: flex;
+    display: block;
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
 
+}
+
+#navbar ul li a:hover{
+    color:black;
+    display: block;
+    background-color: white;
+
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: " ";
+    background:url('../image.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
 }
