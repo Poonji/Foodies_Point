@@ -11,12 +11,27 @@
     align-items: center;
 }
 #logo{
-    margin: 34px 45px;
+    margin: 0px 0px;
 
 }
 
 #logo img{
-    height: 56px;
-    margin: 34px 45px;
+    height: 56;
+    margin: 0px 0px;
+
+}
+#navbar ul {
+    display:flex;
+}
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    display: flex;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
 
 }
